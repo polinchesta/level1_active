@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    outline: none;
+}
+
+.wrapper{
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1200px;
+}
+
+h1{
+    font-family: Raleway;
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 75px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    @media (max-width:1200px){
+            font-size: 48px;
+            line-height: 56px;
+    }
+    
+}
+
+h4{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+p{
+    font-family: Raleway;
+    font-weight: 400;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    @media (max-width:1200px){
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
+
+@import "mixin";
+@import "banner";
+@import "content";
+@import "images";
+@import "people";
+@import "slide";
+@import "ready";
+@import "footer";

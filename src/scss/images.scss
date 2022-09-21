@@ -1,0 +1,80 @@
+.images{
+    margin-top: 130px;
+    @media (max-width:1200px) {
+        margin-top: 80px;
+    }
+    @media (max-width:768px) {
+        margin-top: 0;
+    }
+    &-content{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        border: 2px solid #FFFFFF;
+        gap: 1px;
+        @media (max-width: 768px) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        }
+    }
+    &-card{
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        &__up{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .3s ease;
+            background: rgba(255, 67, 67, 0.8);
+            border: 2px solid #FFFFFF;
+            &:active{
+                background: rgba(185, 12, 12, 0.8);
+            }
+            &-txt{
+                color: white;
+                font-size: 20px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-align: center;
+                
+            }
+            &-title{
+                font-size: 18px;
+                line-height: 21px; 
+                color: #FFFFFF;
+                margin: 0 auto;
+            }
+            &-text{
+                font-size: 14px;
+                line-height: 16px;
+                color: #FFFFFF;
+                margin-top: 21px;
+            }
+        }
+        &__photo{
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+            & img{
+                width: inherit;
+            }
+        }
+    }
+}
+
+
+
+
+.images-card:hover .images-card__up {
+opacity: 0.8;
+}

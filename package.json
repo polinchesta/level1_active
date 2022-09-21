@@ -1,0 +1,20 @@
+{
+  "name": "level1",
+  "version": "1.0.0",
+  "description": "some-text",
+  "source": "src/index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.7.0",
+    "parcel": "^2.7.0"
+  },
+  "dependencies": {
+    "swiper": "^8.4.2"
+  }
+}

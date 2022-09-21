@@ -1,0 +1,29 @@
+@mixin mixin-red__btn{
+    .red-btn{
+        font-family: Raleway;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 28px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        background-color: #FF4343;;
+        padding: 25px 0;
+        width: 370px;
+        &:hover{
+            background: #E71414;
+        }
+        &:active{
+            background: #FF4343;
+        }
+        @media (max-width: 1200px){
+            width: 314px;
+        }
+        @media (max-width: 768px){
+            width: 280px;
+        }
+    }
+}

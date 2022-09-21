@@ -1,0 +1,116 @@
+.banner{
+    #menu__toggle {
+        opacity: 0;
+    }    
+    height: 750px;
+    background:url(../images/banner.png) center no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    z-index: 0;
+    margin: 0 auto;
+    &:before{
+        content: "";
+        z-index: -1;
+        opacity: 0.8;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        background-color: #252B49;
+    }
+    &-content{
+        padding: 130px 75px;
+        margin: 0 auto;
+        @media (max-width: 768px) {
+            padding: 70px 4px;
+        }
+        p{
+            font-family: Raleway;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 28px;
+            color: #FFFFFF;
+            text-align: center;
+            padding-top: 31px;
+            @media (max-width:1200px){
+                font-size: 18px;
+                line-height: 21px;
+            }
+            @media (max-width:768px){
+                font-size: 14px;
+                line-height: 16px;
+            }
+        }
+        h1{
+            @media (max-width:1200px){
+                font-size: 48px;
+                line-height: 56px;
+            }
+            @media (max-width:768px){
+                font-size: 36px;
+                line-height: 42.26px;
+            }
+        }
+        .banner-btn{
+            display: flex;
+            justify-content: center;
+            padding-top: 80px;
+            @media (max-width:1200px){
+                padding-top: 90px;
+            }
+            @media (max-width:768px){
+                padding-top: 50px;
+                flex-wrap: none;
+            }
+            @include mixin_red__btn;
+        }
+    }
+    .nav-list{
+        display: flex;
+        &__link{
+            margin-left: 25px;
+            margin-right: 20px;
+            @media (max-width: 1200px) {
+                margin-left: 17px;
+                margin-right: 10.5px;
+            }
+            @media (max-width: 768px){
+                display: none;
+            }
+            a {
+                font-family: Raleway;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 13px;
+                line-height: 15px;
+                color: #FFFFFF;
+            }
+        }
+    }
+    .header-block {
+        display: flex;
+        justify-content: space-between ;
+        align-items: center;
+        border-bottom: 1px solid #BABBC5;
+        padding: 34px 0px;
+        margin: 0 auto;
+        @media (max-width: 768px){
+            border: none;
+        }
+        .header-logo{
+            &__img{
+                width: 184;
+                height: 26px;
+                @media (max-width: 1200px){
+                    width: 184;
+                    height: 26px;
+                }
+                @media (max-width: 768px){
+                    width: 104px;
+                    height: 15px;
+                }
+            }
+        }
+    }
+}

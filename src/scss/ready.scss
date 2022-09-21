@@ -1,0 +1,70 @@
+.ready{
+    margin-top: 114px;
+    @media (max-width:1200px){
+        margin-top: 80px;
+    }
+    @media (max-width:768px){
+        margin-top: 35px;
+    }
+        &-title{
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 35px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            color: #000000;
+            padding: 18px 0;
+            @media (max-width:1200px){
+                padding: 12px 0;
+            }
+            @media (max-width:768px){
+                padding: 19px 0;
+                font-size: 18px;
+                line-height: 21px;
+            }
+        }
+        
+        &-text{
+            margin-top: 5px;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 21px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            text-transform: uppercase;
+            color: #000000;
+            @media (max-width:1200px) {
+                font-size: 14px;
+                line-height: 16px;
+            }
+            @media (max-width:768px) {
+                margin-top: 3px;
+                font-size: 13px;
+                line-height: 15px;
+            }
+        }
+}
+
+.ready-btn{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 114px;
+    @media (max-width:1200px){
+        margin: 45px 0 78px; 
+    }
+    @media (max-width:768px){
+        margin: 13px 0 45px; 
+    }
+    @include mixin_red__btn;
+}
+.ready-btn .red-btn{
+    padding: 28px 0;
+    @media (max-width:768px){
+        font-size: 18px;
+        line-height: 21px;
+    }
+}

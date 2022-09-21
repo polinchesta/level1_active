@@ -1,0 +1,47 @@
+.nav-list {
+  display: flex;
+}
+
+.nav-list__link a {
+  color: #fff;
+  font-family: Raleway;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 15px;
+}
+
+.nav-list__link {
+  margin-left: 45px;
+}
+
+.banner {
+  height: 750px;
+  width: 100%;
+  z-index: 0;
+  background: url("banner.ae405365.png") center / cover no-repeat;
+  position: relative;
+}
+
+.banner:before {
+  content: "";
+  z-index: 1;
+  opacity: .8;
+  height: 100%;
+  width: 100%;
+  background-color: #252b49;
+  position: absolute;
+}
+
+.header-logo {
+  z-index: 2;
+}
+
+.header-block {
+  border-bottom: 1px solid #babbc5;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+/*# sourceMappingURL=index.e6f89118.css.map */

@@ -1,0 +1,176 @@
+.footer{
+    background: #353C65;
+    @media (max-width:768px) {
+        margin-top: 45px;
+    }
+    &-content{
+        display: flex;
+		justify-content: space-between;
+		column-gap: 25px;
+		padding: 72px 0 68px 0;
+		text-align: center;
+		@media (max-width: 1200px) {
+			column-gap: 15px;
+			padding: 47px 0 42px 0;
+		}
+		@media (max-width: 768px) {
+			flex-direction: column;
+			align-items: center;
+			column-gap: 0;
+			padding: 35px 0 34px 0;
+		}
+        &__location{
+            width: 370px;
+            @media (max-width:1200px) {
+                width: 315px;
+            }
+            &-title{
+                font-family: Raleway;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 16px;
+                text-align: center;
+                text-transform: uppercase;
+                justify-content: center;
+                color: #FFFFFF;
+                
+            }
+            &-text{
+                margin-top: 28px;
+                @media (max-width:1200px) {
+                    margin-top: 18px;
+                }
+                @media (max-width:768px) {
+                    margin-top: 34px;
+                }
+                font-family: 'Raleway';
+                font-style: normal;
+                font-weight: 400;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                text-transform: capitalize;
+                justify-content: center;
+                
+                color: #FFFFFF;
+            }
+        }
+
+        &__social{
+            width: 370px;
+            @media (max-width:1200px) {
+                width: 315px;
+            }
+            &-title{
+                font-family: Raleway;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 16px;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                text-transform: uppercase;
+                justify-content: center;
+                color: #FFFFFF;
+                @media (max-width:768px) {
+                    margin-top: 69px;
+                }
+            }
+            &-link{
+                display: flex;
+                justify-content: center;
+                margin-top: 49px;
+                @media (max-width:1200px) {
+                    margin-top: 32px;
+                }
+
+                &-item{
+                margin: 0 14px;
+                    @media (max-width:1200px) {
+                        margin: 0 11px;
+                    }
+                    @media (max-width:768px) {
+                        margin: 0 8px;
+                    }
+                }
+
+                &-item svg{
+                    @media (max-width:1200px) {
+                        width: 33px;
+                        height: 33px;
+                    }
+                    }
+            }
+        }
+
+        &__about{
+            width: 370px;
+            @media (max-width:1200px) {
+                width: 315px;
+            }
+            &-title{
+                font-family: Raleway;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 16px;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                text-transform: uppercase;
+                justify-content: center;
+                color: #FFFFFF;
+                @media (max-width:768px) {
+                    margin-top: 59px;
+                }
+            }
+            &-text{
+                margin-top: 28px;
+                text-transform: capitalize;
+                color: #FFFFFF;                
+                @media (max-width:1200px) {
+                    margin-top: 16px;
+                }
+                @media (max-width:768px) {
+                    margin-top: 38px;
+                }
+            }
+        }        
+
+    }
+
+    &-copyright{
+        margin: 0 auto;
+        background-color: #2C3154;
+        @media (max-width:768px) {
+            margin-top: 33px;
+        }
+        &__text{
+            width: 370px;
+            margin: 0 auto;
+            padding: 24px 0;
+            @media (max-width:1200px) {
+                width: 315px; 
+                padding: 14px 0;
+            }
+            @media (max-width:768px) {
+                width: 100%; 
+                padding: 30px 0 29px;
+            }
+            &-active{
+                align-items: center;
+                text-align: center;
+                text-transform: capitalize;
+                display: inline-block;
+                font-weight: 400;
+                color: #808080;
+                & span{
+                    color: white;
+                }
+            }
+        }
+    }
+}
+

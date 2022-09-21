@@ -1,0 +1,114 @@
+.people{
+    margin-top: 115px;
+    @media (max-width:1200px) {
+        margin-top: 80px;
+    }
+    @media (max-width:768px) {
+        margin-top: 35px;
+    }    
+    &-content{
+        display: flex;
+        justify-content: space-between;
+        @media (max-width:768px) {
+            flex-wrap: wrap;
+        } 
+        &__card{
+            width: 270px;
+            @media (max-width:1200px) {
+                width: 227px;
+            }
+            @media (max-width:768px) {
+                width: 280px;
+                margin: 0 auto;
+            }            
+            &-img{
+                display: block;
+                margin: 0 auto;
+                max-width: 270px;
+                max-height: 270px;
+                @media (max-width:768px) {
+                    height: 100%;
+                    width: 100%;
+                }   
+                img{
+                    display: block;
+                    width: 100%;
+                    object-fit: cover;
+                    max-width: 270px;
+                    max-height: 270px;
+                    @media (max-width:1200px) {
+                        max-width: 227px;
+                        max-height: 227px;
+                    }
+                    @media (max-width:768px) {
+                        max-width: 100%;
+                        max-height: 100%;
+                    }
+                }
+            }
+
+            &-text-name{
+                font-family: Raleway;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 28px;
+                justify-content:  flex-start;
+                text-transform: capitalize;
+                margin-top: 30;
+                font-weight: 700;
+                padding: 1px 0;
+                @media (max-width:1200px) {
+                    margin-top: 25px;
+                    padding: 2px 0;
+                }
+            }
+
+            &-text-spec{
+                margin-top: 5px;
+                text-transform: uppercase;
+                color: #FF4343; 
+            }
+            &-text-all{
+                text-align: left;
+                color: #6C7279;
+                margin-top: 18px;
+                @media (max-width:1200px) {
+                    margin-top: 22px;
+                }
+                @media (max-width:768px) {
+                    margin-top: 39px;
+                }
+            }
+            &-link{
+                display: flex;
+                margin-top: 37px;
+                @media (max-width:1200px){
+                    margin-top: 39px;
+                }
+                @media (max-width:768px){
+                    margin-top: 55px;
+                }
+                &-item svg{
+                    width: 39px;
+                    height: 39px;
+                    margin-right: 6px;
+                    @media (max-width:1200px){
+                        width: 32px;
+                        height: 32px;
+                        margin-right: 5px;
+                    }
+                    @media (max-width:768px){
+                        width: 39px;
+                        height: 39px;
+                        margin-right: 6px;
+                        margin-bottom: 49px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
