@@ -209,11 +209,17 @@ p {
 
 .banner .nav-list__link a {
   color: #fff;
+  background-color: #0000;
+  border: 3px solid #0000;
   font-family: Raleway;
   font-size: 13px;
   font-style: normal;
   font-weight: 700;
   line-height: 15px;
+}
+
+.banner .nav-list__link a:hover {
+  border-bottom: 3px solid #babbc5;
 }
 
 .banner .header-block {
